@@ -1,0 +1,23 @@
+{
+  "name": "absolit/lint-config",
+  "description": "Shared Laravel Pint and PHP_CodeSniffer presets per stack (Laravel, WordPress Bedrock).",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": ">=8.2"
+  },
+  "suggest": {
+    "laravel/pint": "^1.21 to use the pint/*.json presets via \"extend\"",
+    "squizlabs/php_codesniffer": "^3.10 to use the phpcs/*.xml rulesets"
+  },
+  "archive": {
+    "exclude": [
+      "/eslint",
+      "/prettier",
+      "/test",
+      "/node_modules",
+      "/package.json",
+      "/pnpm-lock.yaml"
+    ]
+  }
+}

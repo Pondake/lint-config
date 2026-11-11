@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset name="Absolit Bedrock">
+  <description>Coding standard for WordPress Bedrock projects.</description>
+
+  <arg name="extensions" value="php"/>
+  <arg name="colors"/>
+  <arg value="ns"/>
+
+  <!-- WordPress core, Composer dependencies and bundled default themes. -->
+  <exclude-pattern>*/web/wp/*</exclude-pattern>
+  <exclude-pattern>*/web/app/themes/twenty*/*</exclude-pattern>
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+
+  <rule ref="PSR2"/>
+</ruleset>
