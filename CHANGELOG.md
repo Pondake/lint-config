@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 - 2026-11-12
+
+- Removed repository housekeeping files that do not belong in the package.
+
 ## 1.0.0 - 2026-11-11
 
 - ESLint 10 presets: `nuxt`, `laravel-vue`, `react`, `next`, and the shared
