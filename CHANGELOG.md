@@ -5,6 +5,8 @@
 - `vue/component-name-in-template-casing` no longer renames components named
   after an HTML or SVG element (`Button`, `Input`, `Label`, `Dialog`, …).
   Kebab-casing them turned shadcn-vue components into native elements.
+- `phpcs/bedrock.xml` also skips `node_modules`, `web/app/uploads` and
+  `web/app/cache`.
 
 ## 1.0.2 - 2026-11-12
 

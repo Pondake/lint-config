@@ -6,10 +6,13 @@
   <arg name="colors"/>
   <arg value="ns"/>
 
-  <!-- WordPress core, Composer dependencies and bundled default themes. -->
+  <!-- WordPress core, dependencies, bundled default themes and runtime files. -->
   <exclude-pattern>*/web/wp/*</exclude-pattern>
   <exclude-pattern>*/web/app/themes/twenty*/*</exclude-pattern>
+  <exclude-pattern>*/web/app/uploads/*</exclude-pattern>
+  <exclude-pattern>*/web/app/cache/*</exclude-pattern>
   <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
 
   <rule ref="PSR2"/>
 </ruleset>
