@@ -21,7 +21,7 @@ Requires ESLint 10 (Node `^20.19 || ^22.13 || >=24`) and Prettier 3.
   - `jsRules`: `no-debugger`, `no-var`, `prefer-const`, `no-console` (warn).
   - `tsRules`: `no-explicit-any` off, unused vars warn unless prefixed `_`.
   - `vueRules`: template → script → style, `<script setup lang="ts">` only,
-    macro order, kebab-case components (`Head`/`Link` excepted).
+    macro order, kebab-case components (names of HTML elements such as `Button` or `Head` excepted).
   - `importOrderRules`: grouped, alphabetised imports (Nuxt and Laravel + Vue).
 - Layout is Prettier's job. Every preset ends with `eslint-config-prettier`.
 - `prettier` is the base: no semicolons, single quotes, trailing commas,
@@ -34,10 +34,10 @@ Requires ESLint 10 (Node `^20.19 || ^22.13 || >=24`) and Prettier 3.
 The package is a git dependency, pinned to a tag. pnpm and npm both work.
 
 ```bash
-pnpm add -D eslint prettier "@absolit/lint-config@github:Pondake/lint-config#v1.0.1"
+pnpm add -D eslint prettier "@absolit/lint-config@github:Pondake/lint-config#v1.0.3"
 ```
 
-Check that `package.json` still ends in `#v1.0.1`: some pnpm versions drop the
+Check that `package.json` still ends in `#v1.0.3`: some pnpm versions drop the
 tag on `pnpm add`. If it is gone, put it back and run `pnpm install`.
 
 PHP presets come from the same repository through Composer:

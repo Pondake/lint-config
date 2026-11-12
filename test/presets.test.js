@@ -46,6 +46,15 @@ test('laravel-vue preset is a complete config', async () => {
   assert.ok((await lint(config, 'unordered.ts')).includes('import/order'))
 })
 
+test('template casing leaves components named after HTML elements alone', async () => {
+  // Kebab-casing <Button> would turn the component into a native <button>.
+  const nuxtConfig = await createConfigForNuxt({ features: { stylistic: false } }).append(...nuxt())
+  for (const config of [nuxtConfig, laravelVue()]) {
+    const rules = await lint(config, 'native-names.vue')
+    assert.ok(!rules.includes('vue/component-name-in-template-casing'), rules.join(', '))
+  }
+})
+
 test('react preset checks hooks', async () => {
   const rules = await lint(react(), 'hooks.jsx')
   assert.ok(rules.includes('react-hooks/rules-of-hooks'), rules.join(', '))

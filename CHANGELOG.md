@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3 - 2026-11-12
+
+- `vue/component-name-in-template-casing` no longer renames components named
+  after an HTML or SVG element (`Button`, `Input`, `Label`, `Dialog`, …).
+  Kebab-casing them turned shadcn-vue components into native elements.
+
 ## 1.0.2 - 2026-11-12
 
 - `eslint-plugin-react-hooks` and `eslint-plugin-react-refresh` are now optional
