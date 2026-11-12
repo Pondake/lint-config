@@ -54,6 +54,11 @@ Remove the plugins the preset now brings along: `@nuxt/eslint-config`,
 `typescript-eslint`, `@eslint/js`, `globals`, `prettier-plugin-tailwindcss`.
 Keep `eslint`, `prettier` and, in Nuxt, the `@nuxt/eslint` module.
 
+`pnpm audit` can flag advisories in the preset's dependencies (for example
+`minimatch` via `eslint-plugin-import-x`). A git dependency cannot override them
+for you; add a `pnpm.overrides` entry (or `overrides` in `pnpm-workspace.yaml`)
+in the project.
+
 ## Use
 
 ### Nuxt
@@ -84,6 +89,12 @@ Options: `ignores`, `globals` (extra browser globals, e.g. `{ axios: 'readonly' 
 `prettier-plugin-organize-imports`).
 
 ### React on Vite
+
+The React plugins are optional peers, so other stacks do not install them:
+
+```bash
+pnpm add -D eslint-plugin-react-hooks eslint-plugin-react-refresh
+```
 
 ```js
 // eslint.config.js

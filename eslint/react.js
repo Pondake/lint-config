@@ -9,7 +9,9 @@ import tseslint from 'typescript-eslint'
 import { ignores, jsRules, tsRules } from './rules.js'
 
 /**
- * React on Vite. A complete config:
+ * React on Vite. Needs eslint-plugin-react-hooks and eslint-plugin-react-refresh
+ * installed in the project (optional peers, so other stacks skip them).
+ * A complete config:
  *
  *   import react from '@absolit/lint-config/eslint/react'
  *   export default react()

@@ -17,12 +17,6 @@ importers:
       eslint-plugin-import-x:
         specifier: ^4.18.1
         version: 4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0)
-      eslint-plugin-react-hooks:
-        specifier: ^7.1.1
-        version: 7.1.1(eslint@10.14.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.5.7
-        version: 0.5.7(eslint@10.14.0)
       eslint-plugin-vue:
         specifier: ^10.12.1
         version: 10.12.1(@stylistic/eslint-plugin@5.10.0(eslint@10.14.0))(@typescript-eslint/parser@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint@10.14.0)(vue-eslint-parser@10.4.2(eslint@10.14.0))
@@ -48,6 +42,12 @@ importers:
       eslint-config-next:
         specifier: ^16.4.6
         version: 16.4.6(@typescript-eslint/parser@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0))(eslint@10.14.0)(typescript@5.9.3)
+      eslint-plugin-react-hooks:
+        specifier: ^7.1.1
+        version: 7.1.1(eslint@10.14.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.5.7
+        version: 0.5.7(eslint@10.14.0)
       prettier:
         specifier: ^3.10.0
         version: 3.10.0
@@ -2849,7 +2849,7 @@ snapshots:
       '@next/eslint-plugin-next': 16.4.6(eslint@10.14.0)
       eslint: 10.14.0
       eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint@10.14.0))(eslint@10.14.0)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0))(eslint-plugin-import@2.32.0)(eslint@10.14.0)
       eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.14.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@10.14.0)
       eslint-plugin-react: 7.37.5(eslint@10.14.0)
@@ -2888,7 +2888,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint@10.14.0))(eslint@10.14.0):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0))(eslint-plugin-import@2.32.0)(eslint@10.14.0):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.3
@@ -2915,7 +2915,7 @@ snapshots:
       '@typescript-eslint/parser': 8.72.2(eslint@10.14.0)(typescript@5.9.3)
       eslint: 10.14.0
       eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint@10.14.0))(eslint@10.14.0)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.18.1(@typescript-eslint/utils@8.72.2(eslint@10.14.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@10.14.0))(eslint-plugin-import@2.32.0)(eslint@10.14.0)
     transitivePeerDependencies:
       - supports-color
 

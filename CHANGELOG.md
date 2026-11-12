@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2 - 2026-11-12
+
+- `eslint-plugin-react-hooks` and `eslint-plugin-react-refresh` are now optional
+  peer dependencies, so Vue and Laravel projects no longer install them.
+  React projects add them themselves.
+- README: how to handle `pnpm audit` findings in preset dependencies.
+
 ## 1.0.1 - 2026-11-12
 
 - Removed repository housekeeping files that do not belong in the package.
