@@ -34,10 +34,10 @@ Requires ESLint 10 (Node `^20.19 || ^22.13 || >=24`) and Prettier 3.
 The package is a git dependency, pinned to a tag. pnpm and npm both work.
 
 ```bash
-pnpm add -D eslint prettier "@absolit/lint-config@github:Pondake/lint-config#v1.0.3"
+pnpm add -D eslint prettier "@absolit/lint-config@github:Pondake/lint-config#v1.0.4"
 ```
 
-Check that `package.json` still ends in `#v1.0.3`: some pnpm versions drop the
+Check that `package.json` still ends in `#v1.0.4`: some pnpm versions drop the
 tag on `pnpm add`. If it is gone, put it back and run `pnpm install`.
 
 PHP presets come from the same repository through Composer:

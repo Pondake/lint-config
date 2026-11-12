@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.4 - 2026-11-12
+
+- `phpcs/bedrock.xml` skips Blade templates (`*.blade.php`). They are not PHP,
+  and PSR-2 sniffs misread their directives.
+
 ## 1.0.3 - 2026-11-12
 
 - `vue/component-name-in-template-casing` no longer renames components named

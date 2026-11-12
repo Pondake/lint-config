@@ -14,5 +14,8 @@
   <exclude-pattern>*/vendor/*</exclude-pattern>
   <exclude-pattern>*/node_modules/*</exclude-pattern>
 
+  <!-- Blade templates (Sage themes) are not PHP; PSR-2 sniffs misread their directives. -->
+  <exclude-pattern>*.blade.php</exclude-pattern>
+
   <rule ref="PSR2"/>
 </ruleset>

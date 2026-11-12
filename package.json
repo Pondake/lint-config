@@ -1,6 +1,6 @@
 {
   "name": "@absolit/lint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shared ESLint and Prettier presets per stack (Nuxt, Laravel + Vue, React, Next.js).",
   "type": "module",
   "license": "UNLICENSED",
