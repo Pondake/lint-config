@@ -1,44 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Shared Renovate rules: one grouped minor/patch update per week, majors only after approval on the dependency dashboard, security fixes right away.",
-  "extends": [
-    "config:recommended",
-    ":dependencyDashboard",
-    ":semanticCommits",
-    "group:allNonMajor"
-  ],
-  "timezone": "Europe/Amsterdam",
-  "schedule": ["before 7am on monday"],
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 5,
-  "labels": ["dependencies"],
-  "minimumReleaseAge": "3 days",
-  "postUpdateOptions": ["pnpmDedupe"],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["before 7am on monday"]
-  },
-  "osvVulnerabilityAlerts": true,
-  "vulnerabilityAlerts": {
-    "enabled": true,
-    "schedule": ["at any time"],
-    "minimumReleaseAge": null,
-    "labels": ["security"]
-  },
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["major"],
-      "dependencyDashboardApproval": true
-    },
-    {
-      "matchManagers": ["composer"],
-      "matchPackageNames": ["absolit/lint-config"],
-      "overrideDatasource": "github-tags",
-      "overridePackageName": "Pondake/lint-config"
-    },
-    {
-      "matchPackageNames": ["wpengine/advanced-custom-fields-pro"],
-      "enabled": false
-    }
-  ]
+  "extends": ["local>Pondake/lint-config"]
 }
