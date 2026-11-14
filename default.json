@@ -34,7 +34,15 @@
       "matchManagers": ["composer"],
       "matchPackageNames": ["absolit/lint-config"],
       "overrideDatasource": "github-tags",
-      "overridePackageName": "Pondake/lint-config"
+      "overridePackageName": "Pondake/lint-config",
+      "registryUrls": ["https://github.com"]
+    },
+    {
+      "matchManagers": ["composer"],
+      "matchPackageNames": ["pondake/share-image"],
+      "overrideDatasource": "github-tags",
+      "overridePackageName": "Pondake/share-image",
+      "registryUrls": ["https://github.com"]
     },
     {
       "matchPackageNames": ["wpengine/advanced-custom-fields-pro"],
